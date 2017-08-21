@@ -70,7 +70,19 @@ static const p_region_t BOOT_RODATA avail_p_regs[] = {
 
 static const p_region_t BOOT_RODATA dev_p_regs[] = {
     /* SoC devices: */
-    { /* .start = */ UART0_PADDR,    /* .end = */ UART0_PADDR + (1 << PAGE_BITS) },
+    { /* .start = */ UART0_PADDR,    /* .end = */ UART0_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ UART1_PADDR,    /* .end = */ UART1_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ UART2_PADDR,    /* .end = */ UART2_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ UART3_PADDR,    /* .end = */ UART3_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ UART4_PADDR,    /* .end = */ UART4_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ UART5_PADDR,    /* .end = */ UART5_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ GPIO0_PADDR,    /* .end = */ GPIO0_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ GPIO1_PADDR,    /* .end = */ GPIO1_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ GPIO2_PADDR,    /* .end = */ GPIO2_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ GPIO3_PADDR,    /* .end = */ GPIO3_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ MMCHS0_PADDR,    /* .end = */ MMCHS0_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ MMC1_PADDR,    /* .end = */ MMC1_PADDR    + (1 << PAGE_BITS) },
+    { /* .start = */ DMTIMER1_1MS_PADDR, /* .end = */ DMTIMER1_1MS_PADDR + (1 << PAGE_BITS) },
     { /* .start = */ DMTIMER2_PADDR, /* .end = */ DMTIMER2_PADDR + (1 << PAGE_BITS) },
     { /* .start = */ DMTIMER3_PADDR, /* .end = */ DMTIMER3_PADDR + (1 << PAGE_BITS) },
     { /* .start = */ DMTIMER4_PADDR, /* .end = */ DMTIMER4_PADDR + (1 << PAGE_BITS) },
